@@ -1,0 +1,29 @@
+/* Highly themeable buttons */
+button {
+  min-width: 80px;
+  padding: 10px 22px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  border-radius: 8px;
+  box-shadow: none;
+  outline: none;
+  border: 2px solid var(--color-outline);
+  background: var(--gradient-primary);
+  color: #fff;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+button.outline {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border: 2px solid var(--color-outline);
+}
+button:disabled {
+  filter: grayscale(0.5);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  filter: brightness(1.06);
+  box-shadow: 0 4px 24px 0 #e040fb1a;
+  border: 2px solid var(--color-accent);
+}

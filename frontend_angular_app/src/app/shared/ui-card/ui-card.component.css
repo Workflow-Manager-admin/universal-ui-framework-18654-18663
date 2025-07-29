@@ -1,0 +1,15 @@
+.ui-card {
+  background: var(--color-surface);
+  border-radius: 14px;
+  border: 2px solid var(--color-border);
+  box-shadow: 0 6px 20px 0 #e040fb17;
+  padding: 1.3rem 1.65rem;
+  margin: 0.7rem 0.45rem;
+  max-width: 100%;
+  transition: box-shadow 0.16s, border-color var(--transition-fast), background 0.3s;
+  font-family: var(--font-main);
+}
+.ui-card:hover {
+  border-color: var(--color-outline);
+  box-shadow: 0 8px 32px 0 #e040fb29;
+}

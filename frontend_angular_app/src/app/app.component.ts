@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
+// PUBLIC_INTERFACE
 @Component({
   selector: 'app-root',
-  imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  standalone: true,
+  imports: [RouterOutlet]
 })
 export class AppComponent {
-  title = 'frontend_angular_app is being generated';
+  // Theme switching handled by MainLayout/Header; nothing to do here.
 }
